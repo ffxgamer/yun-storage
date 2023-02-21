@@ -3,8 +3,7 @@ services:
   - type: web
     name: yun-storage
     env: docker
-    repo: https://github.com/ffxgamer/yun-storage
-.git # optional
+    repo: https://github.com/ffxgamer/yun-storage.git # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
