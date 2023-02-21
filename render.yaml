@@ -9,15 +9,15 @@ services:
     healthCheckPath: /
     envVars:
       - key: PORT
-        value: 5432
+        value: 5244
       - key: DB_TYPE
-        # value: sqlite3
+        value: postgres
         sync: false
       - key: DB_HOST
-        # value: db_host
+        value: tiny.db.elephantsql.com
         sync: false
       - key: DB_PORT
-        # value: 3306
+        value: 5432
         sync: false
       - key: DB_USER
         # value: db_user
@@ -29,7 +29,7 @@ services:
         # value: db_name
         sync: false
       - key: DB_TABLE_PREFIX
-        # value: alist_
+        value: alist_
         sync: false
       - key: CDN
         # value: https://npm.elemecdn.com/alist-web@$version/dist
