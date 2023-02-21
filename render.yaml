@@ -12,13 +12,13 @@ services:
         value: 5244
       - key: DB_TYPE
         value: postgres
-        sync: false
+        #sync: false
       - key: DB_HOST
         value: tiny.db.elephantsql.com
-        sync: false
+        #sync: false
       - key: DB_PORT
         value: 5432
-        sync: false
+        #sync: false
       - key: DB_USER
         # value: db_user
         sync: false
@@ -30,7 +30,7 @@ services:
         sync: false
       - key: DB_TABLE_PREFIX
         value: alist_
-        sync: false
+        #sync: false
       - key: CDN
         # value: https://npm.elemecdn.com/alist-web@$version/dist
         sync: false
