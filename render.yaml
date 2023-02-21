@@ -1,15 +1,16 @@
 services:
   # A Docker web service
   - type: web
-    name: alist
+    name: yun-storage
     env: docker
-    repo: https://github.com/alist-org/alist-render.git # optional
+    repo: https://github.com/ffxgamer/yun-storage
+.git # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
     envVars:
       - key: PORT
-        value: 5244
+        value: 5432
       - key: DB_TYPE
         # value: sqlite3
         sync: false
