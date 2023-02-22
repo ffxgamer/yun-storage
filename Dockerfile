@@ -23,6 +23,7 @@ ENV DB_TABLE_PREFIX alist_
 ENV DB_SSL_MODE prefer
 ENV PORT 5244
 
+# ENV SITE_URL
 # ENV DB_HOST tiny.db.elephantsql.com
 # ENV DB_NAME 
 # ENV DB_USER

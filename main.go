@@ -60,6 +60,7 @@ func main() {
 	dbSslMode := os.Getenv("DB_SSL_MODE")
 	configCdn := os.Getenv("CDN")
 	configPortStr := os.Getenv("PORT")
+	configSiteUrl := os.Getenv("SITE_URL")
 
 	dbPort, err := strconv.Atoi(dbPortStr)
 	if err != nil {
@@ -77,7 +78,7 @@ func main() {
 		Port:           configPort,
 		JwtSecret:      "random generated",
 		TokenExpiresIn: 48,
-		SiteUrl:        "",
+		SiteUrl:        configSiteUrl,
 		Cdn:            configCdn,
 		Database:       Database{Type: dbType, Host: dbHost, Port: dbPort, User: dbUser, Password: dbPassword, Name: dbName, TablePrefix: dbTablePrefix, SslMode: dbSslMode},
 		Scheme:         Scheme{Https: false, CertFile: "", KeyFile: ""},
