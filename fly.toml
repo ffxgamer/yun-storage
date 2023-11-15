@@ -18,7 +18,7 @@ primary_region = "hkg"
   PORT = "5244"
 
 [mounts]
-  source="vol_5vgx3jjxp3m2nnpr"
+  source="alist_data"
   destination="/opt/alist/data"
 
 [http_service]
