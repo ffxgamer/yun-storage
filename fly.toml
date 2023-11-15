@@ -17,6 +17,10 @@ primary_region = "hkg"
   DB_USER = "meygmlle"
   PORT = "5244"
 
+[mounts]
+  source="vol_5vgx3jjxp3m2nnpr"
+  destination="/opt/alist/data"
+
 [http_service]
   internal_port = 5244
   force_https = true
