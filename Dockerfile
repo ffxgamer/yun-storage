@@ -31,4 +31,5 @@ ENV PORT 8080
 
 COPY --chmod=0755 entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+# ENTRYPOINT ["sh", "/entrypoint.sh"]
+CMD ["sleep", " 9999999"]
