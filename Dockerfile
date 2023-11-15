@@ -29,6 +29,7 @@ ENV PORT 5244
 # ENV DB_USER
 # ENV CDN
 
+COPY --chmod=0755 config.json /opt/alist/data/config.json
 COPY --chmod=0755 entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["sh", "/entrypoint.sh"]
