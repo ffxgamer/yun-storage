@@ -31,4 +31,5 @@ ENV PORT 5244
 
 COPY --chmod=0755 entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+# ENTRYPOINT ["sh", "/entrypoint.sh"]
+CMD ["sleep", " 9999999"]
