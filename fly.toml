@@ -1,0 +1,26 @@
+# fly.toml app configuration file generated for alist-yun-storage on 2023-11-15T09:39:57+08:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "alist-yun-storage"
+primary_region = "hkg"
+
+[build]
+
+[env]
+  DB_HOST = "tiny.db.elephantsql.com"
+  DB_NAME = "meygmlle"
+  DB_PORT = "5432"
+  DB_TABLE_PREFIX = "alist_"
+  DB_TYPE = "postgres"
+  DB_USER = "meygmlle"
+  PORT = "5244"
+
+[http_service]
+  internal_port = 5244
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
