@@ -10,11 +10,11 @@ primary_region = "hkg"
 
 [env]
   DB_HOST = "meygmlle.flycast"
-  DB_NAME = "yun"
+  DB_NAME = "meygmlle"
   DB_PORT = "5432"
   DB_TABLE_PREFIX = "alist_"
   DB_TYPE = "postgres"
-  DB_USER = "yun"
+  DB_USER = "meygmlle"
   PORT = "5244"
 
 [[mounts]]
@@ -26,5 +26,5 @@ primary_region = "hkg"
   force_https = true
   auto_stop_machines = false
   auto_start_machines = true
-  min_machines_running = 1
+  min_machines_running = 2
   processes = ["app"]
