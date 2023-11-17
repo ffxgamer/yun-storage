@@ -9,7 +9,7 @@ primary_region = "hkg"
 [build]
 
 [env]
-  DB_HOST = "meygmlle.flycast"
+  DB_HOST = "tiny.db.elephantsql.com"
   DB_NAME = "meygmlle"
   DB_PORT = "5432"
   DB_TABLE_PREFIX = "alist_"
